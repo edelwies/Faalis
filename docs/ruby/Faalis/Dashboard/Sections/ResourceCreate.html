@@ -1,0 +1,1139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: Faalis::Dashboard::Sections::ResourceCreate
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../../';
+  framesUrl = "../../../frames.html#!Faalis/Dashboard/Sections/ResourceCreate.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../../_index.html">Index (R)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../Faalis.html" title="Faalis (module)">Faalis</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Dashboard.html" title="Faalis::Dashboard (module)">Dashboard</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Sections.html" title="Faalis::Dashboard::Sections (module)">Sections</a></span></span>
+     &raquo; 
+    <span class="title">ResourceCreate</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: Faalis::Dashboard::Sections::ResourceCreate
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+      <dt class="r1">Extended by:</dt>
+      <dd class="r1">ActiveSupport::Concern</dd>
+      
+    
+  
+    
+  
+  
+    <dt class="r2">Included in:</dt>
+    <dd class="r2"><span class='object_link'><a href="../DSL.html" title="Faalis::Dashboard::DSL (module)">DSL</a></span></dd>
+    
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/faalis/dashboard/sections/resource_create.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="ResourceCreate/ClassMethods.html" title="Faalis::Dashboard::Sections::ResourceCreate::ClassMethods (module)">ClassMethods</a></span>
+    
+  
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#_new_form_fields-instance_method" title="#_new_form_fields (instance method)">- (Object) <strong>_new_form_fields</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#all_valid_columns_for_form-instance_method" title="#all_valid_columns_for_form (instance method)">- (Object) <strong>all_valid_columns_for_form</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#before_create_hook-instance_method" title="#before_create_hook (instance method)">- (Object) <strong>before_create_hook</strong>(resource) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>You can override this method to change the behaviour of <code>create</code> action.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#before_update_hook-instance_method" title="#before_update_hook (instance method)">- (Object) <strong>before_update_hook</strong>(resource) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>You can override this method to change the behaviour of <code>update</code> action.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#collect_model_fields_for_form-instance_method" title="#collect_model_fields_for_form (instance method)">- (Object) <strong>collect_model_fields_for_form</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create-instance_method" title="#create (instance method)">- (Object) <strong>create</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The actual action method for creating new resource.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#creation_params-instance_method" title="#creation_params (instance method)">- (Object) <strong>creation_params</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edit-instance_method" title="#edit (instance method)">- (Object) <strong>edit</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#edit_hook-instance_method" title="#edit_hook (instance method)">- (Object) <strong>edit_hook</strong>(resource) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>You can override this method to change the behaviour of <code>edit</code> action.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#form_properties-instance_method" title="#form_properties (instance method)">- (Object) <strong>form_properties</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new-instance_method" title="#new (instance method)">- (Object) <strong>new</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The actual action method of a dashboard controller.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#new_hook-instance_method" title="#new_hook (instance method)">- (Object) <strong>new_hook</strong>(resource) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>You can override this method to change the behaviour of <code>new</code> action.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#reflections_hash-instance_method" title="#reflections_hash (instance method)">- (Object) <strong>reflections_hash</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update-instance_method" title="#update (instance method)">- (Object) <strong>update</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="_new_form_fields-instance_method">
+  
+    - (<tt>Object</tt>) <strong>_new_form_fields</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+175
+176
+177</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 175</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__new_form_fields'>_new_form_fields</span>
+  <span class='id identifier rubyid_all_valid_columns_for_form'>all_valid_columns_for_form</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_sym</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="all_valid_columns_for_form-instance_method">
+  
+    - (<tt>Object</tt>) <strong>all_valid_columns_for_form</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 144</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_all_valid_columns_for_form'>all_valid_columns_for_form</span>
+  <span class='kw'>return</span> <span class='ivar'>@all_valid_columns_for_form</span> <span class='kw'>unless</span> <span class='ivar'>@all_valid_columns_for_form</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_columns'>columns</span>   <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_columns_hash'>columns_hash</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span>
+  <span class='id identifier rubyid_relations'>relations</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_reflections'>reflections</span>
+
+  <span class='id identifier rubyid_relations'>relations</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_has_many'>has_many</span> <span class='op'>=</span> <span class='const'>ActiveRecord</span><span class='op'>::</span><span class='const'>Reflection</span><span class='op'>::</span><span class='const'>HasManyReflection</span>
+    <span class='id identifier rubyid_has_and_belongs_to_many'>has_and_belongs_to_many</span> <span class='op'>=</span> <span class='const'>ActiveRecord</span><span class='op'>::</span><span class='const'>Reflection</span><span class='op'>::</span><span class='const'>HasAndBelongsToManyReflection</span>
+
+    <span class='kw'>unless</span> <span class='id identifier rubyid_relations'>relations</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='id identifier rubyid_has_many'>has_many</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_relations'>relations</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='id identifier rubyid_has_and_belongs_to_many'>has_and_belongs_to_many</span>
+        <span class='id identifier rubyid_columns'>columns</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>Class</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='lbrace'>{</span> <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='symbol'>:multiple_select</span> <span class='kw'>end</span> <span class='rbrace'>}</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_col'>col</span>    <span class='op'>=</span> <span class='id identifier rubyid_relations'>relations</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_column'>column</span> <span class='op'>=</span> <span class='id identifier rubyid_columns'>columns</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span> <span class='id identifier rubyid_col'>col</span><span class='period'>.</span><span class='id identifier rubyid_foreign_key'>foreign_key</span>
+        <span class='id identifier rubyid_columns'>columns</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_column'>column</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_columns'>columns</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>id</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_columns'>columns</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>created_at</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_columns'>columns</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>updated_at</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+
+  <span class='ivar'>@all_valid_columns_for_form</span> <span class='op'>=</span> <span class='id identifier rubyid_columns'>columns</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="before_create_hook-instance_method">
+  
+    - (<tt>Object</tt>) <strong>before_create_hook</strong>(resource)  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>You can override this method to change the behaviour of <code>create</code>
+action</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+126
+127</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 126</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_before_create_hook'>before_create_hook</span><span class='lparen'>(</span><span class='id identifier rubyid_resource'>resource</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="before_update_hook-instance_method">
+  
+    - (<tt>Object</tt>) <strong>before_update_hook</strong>(resource)  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>You can override this method to change the behaviour of <code>update</code>
+action</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+131
+132</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 131</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_before_update_hook'>before_update_hook</span><span class='lparen'>(</span><span class='id identifier rubyid_resource'>resource</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="collect_model_fields_for_form-instance_method">
+  
+    - (<tt>Object</tt>) <strong>collect_model_fields_for_form</strong>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_collect_model_fields_for_form'>collect_model_fields_for_form</span>
+  <span class='ivar'>@_fields</span> <span class='op'>||=</span> <span class='id identifier rubyid_form_properties'>form_properties</span><span class='period'>.</span><span class='id identifier rubyid_fields_for_form'>fields_for_form</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create-instance_method">
+  
+    - (<tt>Object</tt>) <strong>create</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The actual action method for creating new resource.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 67</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
+  <span class='id identifier rubyid_authorize'>authorize</span> <span class='id identifier rubyid_model'>model</span>
+
+  <span class='ivar'>@resource</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_creation_params'>creation_params</span><span class='rparen'>)</span>
+
+  <span class='ivar'>@resource</span><span class='period'>.</span><span class='id identifier rubyid_assign_attributes'>assign_attributes</span><span class='lparen'>(</span><span class='op'>**</span><span class='id identifier rubyid_reflections_hash'>reflections_hash</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_reflections_hash'>reflections_hash</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='comment'># Customize the create behaviour
+</span>  <span class='id identifier rubyid_before_create_hook'>before_create_hook</span><span class='lparen'>(</span><span class='ivar'>@resource</span><span class='rparen'>)</span>
+
+  <span class='comment'># TODO: Handle M2M relations in here
+</span>
+  <span class='kw'>if</span> <span class='ivar'>@resource</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+    <span class='id identifier rubyid_successful_response'>successful_response</span><span class='lparen'>(</span><span class='symbol'>:create</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_errorful_resopnse'>errorful_resopnse</span><span class='lparen'>(</span><span class='symbol'>:create</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="creation_params-instance_method">
+  
+    - (<tt>Object</tt>) <strong>creation_params</strong>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 111</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_creation_params'>creation_params</span>
+  <span class='id identifier rubyid_resource'>resource</span> <span class='op'>=</span> <span class='id identifier rubyid_model_name'>model_name</span><span class='period'>.</span><span class='id identifier rubyid_underscore'>underscore</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+
+  <span class='comment'># TODO: replace this line with a better solution to not
+</span>  <span class='comment'>#       allowing the blacklisted fields like id, created_at and ...
+</span>  <span class='id identifier rubyid_fields'>fields</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_columns_hash'>columns_hash</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_sym</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_fields'>fields</span><span class='period'>.</span><span class='id identifier rubyid_concat'>concat</span><span class='lparen'>(</span><span class='id identifier rubyid_attachment_fields'>attachment_fields</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_sym</span> <span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_fields'>fields</span> <span class='op'>=</span> <span class='const'>Set</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_fields'>fields</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_sym</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_require'>require</span><span class='lparen'>(</span><span class='id identifier rubyid_resource'>resource</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_permit'>permit</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_fields'>fields</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="edit-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 25</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit'>edit</span>
+  <span class='comment'># TODO: Handle nested resource in here
+</span>  <span class='ivar'>@resource</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_authorize'>authorize</span> <span class='ivar'>@resource</span><span class='comma'>,</span> <span class='symbol'>:update?</span>
+
+  <span class='id identifier rubyid_collect_model_fields_for_form'>collect_model_fields_for_form</span>
+
+  <span class='ivar'>@resource_title</span>     <span class='op'>=</span> <span class='id identifier rubyid__resource_title'>_resource_title</span><span class='period'>.</span><span class='id identifier rubyid_singularize'>singularize</span>
+  <span class='ivar'>@_fields_properties</span> <span class='op'>=</span> <span class='id identifier rubyid_form_properties'>form_properties</span><span class='period'>.</span><span class='id identifier rubyid__field_details'>_field_details</span>
+  <span class='ivar'>@multipart</span>          <span class='op'>=</span> <span class='id identifier rubyid_has_attachment?'>has_attachment?</span>
+
+  <span class='id identifier rubyid_edit_hook'>edit_hook</span><span class='lparen'>(</span><span class='ivar'>@resource</span><span class='rparen'>)</span>
+
+  <span class='kw'>return</span> <span class='kw'>if</span> <span class='id identifier rubyid__override_views'>_override_views</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='symbol'>:edit</span>
+  <span class='id identifier rubyid_render'>render</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>faalis/dashboard/resource/edit</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="edit_hook-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edit_hook</strong>(resource)  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>You can override this method to change the behaviour of <code>edit</code>
+action</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+141
+142</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 141</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edit_hook'>edit_hook</span><span class='lparen'>(</span><span class='id identifier rubyid_resource'>resource</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="form_properties-instance_method">
+  
+    - (<tt>Object</tt>) <strong>form_properties</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+171
+172
+173</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 171</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_form_properties'>form_properties</span>
+  <span class='const'>Faalis</span><span class='op'>::</span><span class='const'>Dashboard</span><span class='op'>::</span><span class='const'>DSL</span><span class='op'>::</span><span class='const'>Create</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="new-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>The actual action method of a dashboard controller</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 10</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new'>new</span>
+  <span class='id identifier rubyid_authorize'>authorize</span> <span class='id identifier rubyid_model'>model</span><span class='comma'>,</span> <span class='symbol'>:create?</span>
+
+  <span class='id identifier rubyid_collect_model_fields_for_form'>collect_model_fields_for_form</span>
+
+  <span class='ivar'>@resource</span>           <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='ivar'>@resource_title</span>     <span class='op'>=</span> <span class='id identifier rubyid__resource_title'>_resource_title</span><span class='period'>.</span><span class='id identifier rubyid_singularize'>singularize</span>
+  <span class='ivar'>@_fields_properties</span> <span class='op'>=</span> <span class='id identifier rubyid_form_properties'>form_properties</span><span class='period'>.</span><span class='id identifier rubyid__field_details'>_field_details</span>
+  <span class='ivar'>@multipart</span>          <span class='op'>=</span> <span class='id identifier rubyid_has_attachment?'>has_attachment?</span>
+
+  <span class='id identifier rubyid_new_hook'>new_hook</span><span class='lparen'>(</span><span class='id identifier rubyid_resource'>resource</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>if</span> <span class='id identifier rubyid__override_views'>_override_views</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='symbol'>:new</span>
+  <span class='id identifier rubyid_render'>render</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>faalis/dashboard/resource/new</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="new_hook-instance_method">
+  
+    - (<tt>Object</tt>) <strong>new_hook</strong>(resource)  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>You can override this method to change the behaviour of <code>new</code>
+action</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+136
+137</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 136</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_new_hook'>new_hook</span><span class='lparen'>(</span><span class='id identifier rubyid_resource'>resource</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reflections_hash-instance_method">
+  
+    - (<tt>Object</tt>) <strong>reflections_hash</strong>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reflections_hash'>reflections_hash</span>
+  <span class='comment'># TODO: cach the result using and instance_var or something
+</span>  <span class='id identifier rubyid_reflections'>reflections</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_reflections'>reflections</span>
+  <span class='id identifier rubyid_result'>result</span>      <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_reflections'>reflections</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_column'>column</span><span class='op'>|</span>
+    <span class='id identifier rubyid_has_many'>has_many</span> <span class='op'>=</span> <span class='const'>ActiveRecord</span><span class='op'>::</span><span class='const'>Reflection</span><span class='op'>::</span><span class='const'>HasManyReflection</span>
+    <span class='id identifier rubyid_has_and_belongs_to_many'>has_and_belongs_to_many</span> <span class='op'>=</span> <span class='const'>ActiveRecord</span><span class='op'>::</span><span class='const'>Reflection</span><span class='op'>::</span><span class='const'>HasAndBelongsToManyReflection</span>
+
+    <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_column'>column</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='id identifier rubyid_has_many'>has_many</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_column'>column</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='id identifier rubyid_has_and_belongs_to_many'>has_and_belongs_to_many</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_creation_params'>creation_params</span><span class='lbracket'>[</span><span class='id identifier rubyid_column'>column</span><span class='period'>.</span><span class='id identifier rubyid_foreign_key'>foreign_key</span><span class='rbracket'>]</span>
+      <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='id identifier rubyid_column'>column</span><span class='period'>.</span><span class='id identifier rubyid_foreign_key'>foreign_key</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_result'>result</span> <span class='kw'>unless</span> <span class='id identifier rubyid_result'>result</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update-instance_method">
+  
+    - (<tt>Object</tt>) <strong>update</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/dashboard/sections/resource_create.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
+  <span class='comment'># TODO: Handle nested resource in here
+</span>  <span class='ivar'>@resource</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_authorize'>authorize</span> <span class='ivar'>@resource</span>
+
+  <span class='id identifier rubyid_new_params'>new_params</span> <span class='op'>=</span> <span class='id identifier rubyid_creation_params'>creation_params</span>
+  <span class='id identifier rubyid_new_params'>new_params</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='id identifier rubyid_reflections_hash'>reflections_hash</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_reflections_hash'>reflections_hash</span>
+
+  <span class='comment'># Customize update behaviour
+</span>  <span class='id identifier rubyid_before_update_hook'>before_update_hook</span><span class='lparen'>(</span><span class='ivar'>@resource</span><span class='rparen'>)</span>
+
+  <span class='comment'># TODO: Move this method to a suitable place instead of controller
+</span>  <span class='comment'>#       itself
+</span>  <span class='id identifier rubyid_new_params'>new_params</span> <span class='op'>=</span> <span class='id identifier rubyid_symbolify_keys'>symbolify_keys</span><span class='lparen'>(</span><span class='id identifier rubyid_new_params'>new_params</span><span class='rparen'>)</span>
+
+  <span class='ivar'>@resource</span><span class='period'>.</span><span class='id identifier rubyid_assign_attributes'>assign_attributes</span><span class='lparen'>(</span><span class='op'>**</span><span class='id identifier rubyid_new_params'>new_params</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='ivar'>@resource</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+    <span class='id identifier rubyid_successful_response'>successful_response</span><span class='lparen'>(</span><span class='symbol'>:update</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_errorful_resopnse'>errorful_resopnse</span><span class='lparen'>(</span><span class='symbol'>:update</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Dec 11 22:46:17 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.2.3).
+</div>
+
+  </body>
+</html>

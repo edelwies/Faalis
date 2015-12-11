@@ -1,0 +1,1 @@
+Rails.application.config.assets.precompile += %w( dashboard/rtl/application.css dashboard/ltr/application.css)

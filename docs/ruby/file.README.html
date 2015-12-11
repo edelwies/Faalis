@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!file.README.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>Faalis</h1>
+
+<p><a href="http://badge.fury.io/rb/faalis"><img src="https://img.shields.io/gem/v/faalis.svg?style=flat" alt="Gem Version"></a>
+<a href="https://travis-ci.org/Yellowen/Faalis"><img src="https://travis-ci.org/Yellowen/Faalis.svg?branch=master" alt="Build Status"></a>
+<a href="http://rubygems.org/gems/faalis"><img src="https://img.shields.io/gem/dt/faalis.svg" alt="Downloads"></a>
+<a href="https://codeclimate.com/github/Yellowen/Faalis/coverage"><img src="https://codeclimate.com/github/Yellowen/Faalis/badges/coverage.svg" alt="Test Coverage"></a>
+<a href="https://codeclimate.com/github/Yellowen/Faalis"><img src="https://codeclimate.com/github/Yellowen/Faalis/badges/gpa.svg" alt="Code Climate"></a>
+<a href="https://gemnasium.com/Yellowen/Faalis"><img src="https://gemnasium.com/Yellowen/Faalis.svg" alt="Dependency Status"></a>
+<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/github/license/Yellowen/Faalis.svg" alt="Lisence"></a></p>
+
+<p><strong>Faalis</strong> is well tuned platform to create web applications as fast as possible. It is built on top of other quality
+tools, and provides additional features like a robust dashboard, pre-baked authentication and authorization and other
+cool stuff.</p>
+
+<h2>Installation</h2>
+
+<p>Simply add <code>faalis</code> to your gem file with following command:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_source'>source</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>http://rails-assets.org</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rails-assets-sugar</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rails-assets-bootstrap-rtl</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rails-assets-jquery-knob</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rails-assets-bootstrap-daterangepicker</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rails-assets-jquery-sparkline</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rails-assets-jquery-icheck</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rails-assets-admin-lte</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span>
+
+<span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>faalis</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>github:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Yellowen/Faalis</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<p>Then install your project dependencies using <code>bundle</code> command:</p>
+
+<pre class="code bash"><code class="bash">bundle install
+</code></pre>
+
+<p>use <code>faalis:install</code> generator to install <strong>faalis</strong> into your project by issuing the following command:</p>
+
+<pre class="code bash"><code class="bash">rails g faalis:install
+</code></pre>
+
+<p>Add this to your <code>config/environments/development.rb</code> file</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_action_mailer'>action_mailer</span><span class='period'>.</span><span class='id identifier rubyid_default_url_options'>default_url_options</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='symbol'>:host</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>localhost:3000</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span>
+</code></pre>
+
+<blockquote>
+<p>In production, <code>:host</code> should be set to the actual host of your application.</p>
+</blockquote>
+
+<p>Perform <code>rake db:migrate db:seed</code> and enjoy Faalis</p>
+
+<blockquote>
+<p><strong>NOTE</strong>: You can specify the ORM you&#39;d like to use in <code>config/initializers/faalis.rb</code></p>
+</blockquote>
+
+<h2>Documents</h2>
+
+<p>It&#39;s easier to starts with <a href="http://guides.faalis.io/">Faalis Guides</a> but you can checkout the
+automated <a href="http://rubydoc.info/gems/faalis">rubydoc</a> docs.</p>
+
+<h2>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am &#39;Add some feature&#39;</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+
+<p>Also you can join us in our <code>IRC</code> channel: <strong>#Faalis</strong> on freenode. ( It will redirect you to #5hit :P )</p>
+
+<h2>Credit</h2>
+
+<p><img src="http://www.yellowen.com/images/logo.png" alt="Yellowen"></p>
+
+<p><strong>Faalis</strong>  is maintained and funded by Yellowen. Whenever a code snippet is borrowed or inspired by
+existing code, we try to credit the original developer/designer in our source code. Let us know if you
+think we have forgotten to do this, and we will do our best to locate the problem and fix it in a timely
+manner.</p>
+
+<h1>License</h1>
+
+<p><strong>Faalis</strong> is Copyright © 2013-2015 Yellowen. It is free software, and may be redistributed under the terms specified in the LICENSE file.</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Fri Dec 11 22:46:16 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.2.3).
+</div>
+
+  </body>
+</html>

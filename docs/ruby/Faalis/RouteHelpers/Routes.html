@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Faalis::RouteHelpers::Routes
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!Faalis/RouteHelpers/Routes.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (R)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Faalis.html" title="Faalis (module)">Faalis</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../RouteHelpers.html" title="Faalis::RouteHelpers (module)">RouteHelpers</a></span></span>
+     &raquo; 
+    <span class="title">Routes</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Faalis::RouteHelpers::Routes
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Faalis::RouteHelpers::Routes</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/faalis/route.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#define_api_routes-class_method" title="define_api_routes (class method)">+ (Object) <strong>define_api_routes</strong>(routes: Rails.application.routes, version: :v1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>This class method will add <code>Faalis</code> routes to host application Router.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#localized_scop-class_method" title="localized_scop (class method)">+ (Object) <strong>localized_scop</strong>(router: Rails.application.routes) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="define_api_routes-class_method">
+  
+    + (<tt>Object</tt>) <strong>define_api_routes</strong>(routes: Rails.application.routes, version: :v1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>This class method will add <code>Faalis</code> routes to host application
+Router</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/route.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_define_api_routes'>define_api_routes</span><span class='lparen'>(</span><span class='label'>routes:</span> <span class='const'>Rails</span><span class='period'>.</span><span class='id identifier rubyid_application'>application</span><span class='period'>.</span><span class='id identifier rubyid_routes'>routes</span><span class='comma'>,</span>
+                           <span class='label'>version:</span> <span class='symbol'>:v1</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>[Warning]: This method is depricated. Please use &quot;api_routes&quot; directly in your router.</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_routes'>routes</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span> <span class='kw'>do</span>
+    <span class='comment'># TODO: Add a dynamic solution for formats
+</span>    <span class='id identifier rubyid_namespace'>namespace</span> <span class='symbol'>:api</span><span class='comma'>,</span> <span class='label'>defaults:</span> <span class='lbrace'>{</span> <span class='label'>format:</span> <span class='symbol'>:json</span> <span class='rbrace'>}</span> <span class='kw'>do</span>
+      <span class='id identifier rubyid_namespace'>namespace</span> <span class='id identifier rubyid_version'>version</span> <span class='kw'>do</span>
+        <span class='comment'># Call user given block to define user routes
+</span>        <span class='comment'># inside this namespace
+</span>        <span class='kw'>yield</span> <span class='kw'>self</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_scope'>scope</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>module</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>faalis</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>do</span>
+      <span class='comment'># TODO: Add a dynamic solution for formats
+</span>      <span class='id identifier rubyid_namespace'>namespace</span> <span class='symbol'>:api</span><span class='comma'>,</span> <span class='label'>defaults:</span> <span class='lbrace'>{</span> <span class='label'>format:</span> <span class='symbol'>:json</span> <span class='rbrace'>}</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_namespace'>namespace</span> <span class='id identifier rubyid_version'>version</span> <span class='kw'>do</span>
+          <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>permissions</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>      <span class='label'>to:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>permissions#index</span><span class='tstring_end'>&#39;</span></span>
+          <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>permissions/user</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>to:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>permissions#user_permissions</span><span class='tstring_end'>&#39;</span></span>
+          <span class='id identifier rubyid_resources'>resources</span> <span class='symbol'>:groups</span><span class='comma'>,</span>      <span class='label'>except:</span> <span class='lbracket'>[</span><span class='symbol'>:new</span><span class='rbracket'>]</span>
+          <span class='id identifier rubyid_resources'>resources</span> <span class='symbol'>:users</span><span class='comma'>,</span>       <span class='label'>except:</span> <span class='lbracket'>[</span><span class='symbol'>:new</span><span class='rbracket'>]</span>
+          <span class='id identifier rubyid_resource'>resource</span> <span class='symbol'>:profile</span><span class='comma'>,</span>      <span class='label'>except:</span> <span class='lbracket'>[</span><span class='symbol'>:new</span><span class='comma'>,</span> <span class='symbol'>:destroy</span><span class='rbracket'>]</span>
+
+          <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>logs</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>to:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>logs#index</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="localized_scop-class_method">
+  
+    + (<tt>Object</tt>) <strong>localized_scop</strong>(router: Rails.application.routes) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/faalis/route.rb', line 54</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_localized_scop'>localized_scop</span><span class='lparen'>(</span><span class='label'>router:</span> <span class='const'>Rails</span><span class='period'>.</span><span class='id identifier rubyid_application'>application</span><span class='period'>.</span><span class='id identifier rubyid_routes'>routes</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>[Warning]: This method is depricated please just use &quot;localized_scope&quot; in your router.</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_langs'>langs</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>I18n</span><span class='period'>.</span><span class='id identifier rubyid_available_locales'>available_locales</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>|</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_router'>router</span><span class='period'>.</span><span class='id identifier rubyid_scope'>scope</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>(:locale)</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>locale:</span> <span class='const'>Regexp</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_langs'>langs</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Dec 11 22:46:19 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.2.3).
+</div>
+
+  </body>
+</html>

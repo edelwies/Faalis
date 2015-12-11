@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Faalis::Dashboard::ApplicationController
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!Faalis/Dashboard/ApplicationController.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Faalis.html" title="Faalis (module)">Faalis</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Dashboard.html" title="Faalis::Dashboard (module)">Dashboard</a></span></span>
+     &raquo; 
+    <span class="title">ApplicationController</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Faalis::Dashboard::ApplicationController
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="../ApplicationController.html" title="Faalis::ApplicationController (class)">ApplicationController</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActionController::Base</li>
+          
+            <li class="next"><span class='object_link'><a href="../ApplicationController.html" title="Faalis::ApplicationController (class)">ApplicationController</a></span></li>
+          
+            <li class="next">Faalis::Dashboard::ApplicationController</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="DSL.html" title="Faalis::Dashboard::DSL (module)">DSL</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">app/controllers/faalis/dashboard/application_controller.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+  <h2>Instance Attribute Summary</h2>
+  
+  <h3 class="inherited">Attributes included from <span class='object_link'><a href="DSL.html" title="Faalis::Dashboard::DSL (module)">DSL</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="DSL.html#_override_views-instance_method" title="Faalis::Dashboard::DSL#_override_views (method)">#_override_views</a></span></p>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#redirect_to_404-instance_method" title="#redirect_to_404 (instance method)">- (Object) <strong>redirect_to_404</strong>(e) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#setup_header-instance_method" title="#setup_header (instance method)">- (Object) <strong>setup_header</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#user_not_authorized-instance_method" title="#user_not_authorized (instance method)">- (Object) <strong>user_not_authorized</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Sections/Sidebar.html" title="Faalis::Dashboard::Sections::Sidebar (module)">Sections::Sidebar</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Sections/Sidebar.html#setup_sidebar-instance_method" title="Faalis::Dashboard::Sections::Sidebar#setup_sidebar (method)">#setup_sidebar</a></span>, <span class='object_link'><a href="Sections/Sidebar.html#sidebar-instance_method" title="Faalis::Dashboard::Sections::Sidebar#sidebar (method)">#sidebar</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Sections/ResourceDestroy.html" title="Faalis::Dashboard::Sections::ResourceDestroy (module)">Sections::ResourceDestroy</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Sections/ResourceDestroy.html#before_destroy_hook-instance_method" title="Faalis::Dashboard::Sections::ResourceDestroy#before_destroy_hook (method)">#before_destroy_hook</a></span>, <span class='object_link'><a href="Sections/ResourceDestroy.html#destroy-instance_method" title="Faalis::Dashboard::Sections::ResourceDestroy#destroy (method)">#destroy</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Sections/ResourceShow.html" title="Faalis::Dashboard::Sections::ResourceShow (module)">Sections::ResourceShow</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Sections/ResourceShow.html#_show_fields-instance_method" title="Faalis::Dashboard::Sections::ResourceShow#_show_fields (method)">#_show_fields</a></span>, <span class='object_link'><a href="Sections/ResourceShow.html#collect_model_fields_for_show-instance_method" title="Faalis::Dashboard::Sections::ResourceShow#collect_model_fields_for_show (method)">#collect_model_fields_for_show</a></span>, <span class='object_link'><a href="Sections/ResourceShow.html#show-instance_method" title="Faalis::Dashboard::Sections::ResourceShow#show (method)">#show</a></span>, <span class='object_link'><a href="Sections/ResourceShow.html#show_hook-instance_method" title="Faalis::Dashboard::Sections::ResourceShow#show_hook (method)">#show_hook</a></span>, <span class='object_link'><a href="Sections/ResourceShow.html#show_properties-instance_method" title="Faalis::Dashboard::Sections::ResourceShow#show_properties (method)">#show_properties</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Sections/ResourceCreate.html" title="Faalis::Dashboard::Sections::ResourceCreate (module)">Sections::ResourceCreate</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Sections/ResourceCreate.html#_new_form_fields-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#_new_form_fields (method)">#_new_form_fields</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#all_valid_columns_for_form-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#all_valid_columns_for_form (method)">#all_valid_columns_for_form</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#before_create_hook-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#before_create_hook (method)">#before_create_hook</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#before_update_hook-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#before_update_hook (method)">#before_update_hook</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#collect_model_fields_for_form-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#collect_model_fields_for_form (method)">#collect_model_fields_for_form</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#create-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#create (method)">#create</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#creation_params-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#creation_params (method)">#creation_params</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#edit-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#edit (method)">#edit</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#edit_hook-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#edit_hook (method)">#edit_hook</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#form_properties-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#form_properties (method)">#form_properties</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#new-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#new (method)">#new</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#new_hook-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#new_hook (method)">#new_hook</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#reflections_hash-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#reflections_hash (method)">#reflections_hash</a></span>, <span class='object_link'><a href="Sections/ResourceCreate.html#update-instance_method" title="Faalis::Dashboard::Sections::ResourceCreate#update (method)">#update</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Sections/ResourcesIndex.html" title="Faalis::Dashboard::Sections::ResourcesIndex (module)">Sections::ResourcesIndex</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Sections/ResourcesIndex.html#fetch_and_set_all-instance_method" title="Faalis::Dashboard::Sections::ResourcesIndex#fetch_and_set_all (method)">#fetch_and_set_all</a></span>, <span class='object_link'><a href="Sections/ResourcesIndex.html#fetch_index_objects-instance_method" title="Faalis::Dashboard::Sections::ResourcesIndex#fetch_index_objects (method)">#fetch_index_objects</a></span>, <span class='object_link'><a href="Sections/ResourcesIndex.html#index-instance_method" title="Faalis::Dashboard::Sections::ResourcesIndex#index (method)">#index</a></span>, <span class='object_link'><a href="Sections/ResourcesIndex.html#index_hook-instance_method" title="Faalis::Dashboard::Sections::ResourcesIndex#index_hook (method)">#index_hook</a></span>, <span class='object_link'><a href="Sections/ResourcesIndex.html#index_properties-instance_method" title="Faalis::Dashboard::Sections::ResourcesIndex#index_properties (method)">#index_properties</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Sections/Resource.html" title="Faalis::Dashboard::Sections::Resource (module)">Sections::Resource</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Sections/Resource.html#_resource_title-instance_method" title="Faalis::Dashboard::Sections::Resource#_resource_title (method)">#_resource_title</a></span>, <span class='object_link'><a href="Sections/Resource.html#_resources-instance_method" title="Faalis::Dashboard::Sections::Resource#_resources (method)">#_resources</a></span>, <span class='object_link'><a href="Sections/Resource.html#_route_engine-instance_method" title="Faalis::Dashboard::Sections::Resource#_route_engine (method)">#_route_engine</a></span>, <span class='object_link'><a href="Sections/Resource.html#_route_name-instance_method" title="Faalis::Dashboard::Sections::Resource#_route_name (method)">#_route_name</a></span>, <span class='object_link'><a href="Sections/Resource.html#action_buttons-instance_method" title="Faalis::Dashboard::Sections::Resource#action_buttons (method)">#action_buttons</a></span>, <span class='object_link'><a href="Sections/Resource.html#attachment_fields-instance_method" title="Faalis::Dashboard::Sections::Resource#attachment_fields (method)">#attachment_fields</a></span>, <span class='object_link'><a href="Sections/Resource.html#errorful_resopnse-instance_method" title="Faalis::Dashboard::Sections::Resource#errorful_resopnse (method)">#errorful_resopnse</a></span>, <span class='object_link'><a href="Sections/Resource.html#guess_edit_route-instance_method" title="Faalis::Dashboard::Sections::Resource#guess_edit_route (method)">#guess_edit_route</a></span>, <span class='object_link'><a href="Sections/Resource.html#guess_index_route-instance_method" title="Faalis::Dashboard::Sections::Resource#guess_index_route (method)">#guess_index_route</a></span>, <span class='object_link'><a href="Sections/Resource.html#guess_new_route-instance_method" title="Faalis::Dashboard::Sections::Resource#guess_new_route (method)">#guess_new_route</a></span>, <span class='object_link'><a href="Sections/Resource.html#guess_show_route-instance_method" title="Faalis::Dashboard::Sections::Resource#guess_show_route (method)">#guess_show_route</a></span>, <span class='object_link'><a href="Sections/Resource.html#has_attachment%3F-instance_method" title="Faalis::Dashboard::Sections::Resource#has_attachment? (method)">#has_attachment?</a></span>, <span class='object_link'><a href="Sections/Resource.html#model-instance_method" title="Faalis::Dashboard::Sections::Resource#model (method)">#model</a></span>, <span class='object_link'><a href="Sections/Resource.html#model_name-instance_method" title="Faalis::Dashboard::Sections::Resource#model_name (method)">#model_name</a></span>, <span class='object_link'><a href="Sections/Resource.html#namespace-instance_method" title="Faalis::Dashboard::Sections::Resource#namespace (method)">#namespace</a></span>, <span class='object_link'><a href="Sections/Resource.html#plural_name-instance_method" title="Faalis::Dashboard::Sections::Resource#plural_name (method)">#plural_name</a></span>, <span class='object_link'><a href="Sections/Resource.html#setup_named_routes-instance_method" title="Faalis::Dashboard::Sections::Resource#setup_named_routes (method)">#setup_named_routes</a></span>, <span class='object_link'><a href="Sections/Resource.html#successful_response-instance_method" title="Faalis::Dashboard::Sections::Resource#successful_response (method)">#successful_response</a></span>, <span class='object_link'><a href="Sections/Resource.html#symbolify_keys-instance_method" title="Faalis::Dashboard::Sections::Resource#symbolify_keys (method)">#symbolify_keys</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../ApplicationController.html" title="Faalis::ApplicationController (class)">ApplicationController</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../ApplicationController.html#set_locale-instance_method" title="Faalis::ApplicationController#set_locale (method)">#set_locale</a></span></p>
+
+  
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="redirect_to_404-instance_method">
+  
+    - (<tt>Object</tt>) <strong>redirect_to_404</strong>(e)  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/faalis/dashboard/application_controller.rb', line 33</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_redirect_to_404'>redirect_to_404</span><span class='lparen'>(</span><span class='id identifier rubyid_e'>e</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_respond_to'>respond_to</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_f'>f</span><span class='op'>|</span>
+    <span class='id identifier rubyid_f'>f</span><span class='period'>.</span><span class='id identifier rubyid_html'>html</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_dashboard_not_found_url'>dashboard_not_found_url</span> <span class='rbrace'>}</span>
+    <span class='id identifier rubyid_f'>f</span><span class='period'>.</span><span class='id identifier rubyid_js'>js</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_render'>render</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>faalis/dashboard/not_found</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setup_header-instance_method">
+  
+    - (<tt>Object</tt>) <strong>setup_header</strong>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/faalis/dashboard/application_controller.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_setup_header'>setup_header</span>
+  <span class='ivar'>@dashboard_section_title</span> <span class='op'>=</span> <span class='id identifier rubyid_t'>t</span><span class='lparen'>(</span><span class='id identifier rubyid_controller_name'>controller_name</span><span class='period'>.</span><span class='id identifier rubyid_underscore'>underscore</span><span class='rparen'>)</span>
+  <span class='ivar'>@dashboard_resource_name</span> <span class='op'>=</span> <span class='id identifier rubyid_t'>t</span><span class='lparen'>(</span><span class='id identifier rubyid_controller_name'>controller_name</span><span class='period'>.</span><span class='id identifier rubyid_underscore'>underscore</span><span class='period'>.</span><span class='id identifier rubyid_singularize'>singularize</span><span class='rparen'>)</span>
+  <span class='ivar'>@dashboard_section_slug</span>  <span class='op'>=</span> <span class='id identifier rubyid_t'>t</span><span class='lparen'>(</span><span class='id identifier rubyid_action_name'>action_name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="user_not_authorized-instance_method">
+  
+    - (<tt>Object</tt>) <strong>user_not_authorized</strong>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/controllers/faalis/dashboard/application_controller.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_user_not_authorized'>user_not_authorized</span>
+  <span class='id identifier rubyid_flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:alert</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_t'>t</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>faalis.not_authorized</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_new_user_session_path'>new_user_session_path</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Dec 11 22:46:19 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.2.3).
+</div>
+
+  </body>
+</html>
